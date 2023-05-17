@@ -17,7 +17,7 @@ http://www.mulesoft.org/schema/mule/tls http://www.mulesoft.org/schema/mule/tls/
 	</http:listener-config>
 	<configuration-properties doc:name="Configuration properties" doc:id="7e140c91-639d-4312-b8e6-beb53b82bed3" file="${env}.yaml" />
 	<flow name="azureFlow" doc:id="aaccf06f-bcec-4a91-b5e4-e7a0cf4489e2" >
-		<http:listener doc:name="Listener" doc:id="9412419a-4af6-4302-b653-32833d2c4ad1" config-ref="HTTP_Listener_config" path="/azure"/>
+		<http:listener doc:name="Listeners" doc:id="9412419a-4af6-4302-b653-32833d2c4ad1" config-ref="HTTP_Listener_config" path="/azure"/>
 		<ee:transform doc:name="Transform Message" doc:id="43d21264-8ade-4a4a-bcfe-23104a552161" >
 			<ee:message >
 				<ee:set-payload ><![CDATA['${message}' ++ '${msg}' ++ " lakshmanasa"]]></ee:set-payload>
